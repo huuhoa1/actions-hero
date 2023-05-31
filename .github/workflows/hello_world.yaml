@@ -7,7 +7,7 @@ on:
   pull_request:
     branches:
       - main
-    workflow_dispatch:
+  workflow_dispatch:
 
 jobs:
   hello:
@@ -18,7 +18,7 @@ jobs:
         run: echo 'Hello world!'
         shell: bash
 
-   goodbye:
+  goodbye:
      runs-on: ubuntu-latest
      steps:
        - name: say bye
