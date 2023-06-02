@@ -6,6 +6,10 @@ on:
 
 jobs:
   comment-with-action:
+    permissions:
+      contents: 'read'
+      id-token: 'write'
+      issues: 'write'
     runs-on: ubuntu-latest
     steps:
       - name: "dump github context"
