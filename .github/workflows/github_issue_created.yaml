@@ -28,6 +28,10 @@ jobs:
           reactions: '+1'
           
   comment-with-api:
+    permissions:
+      contents: 'read'
+      id-token: 'write'
+      issues: 'write'
     runs-on: ubuntu-latest
     steps:
       - name: Create comment with API
